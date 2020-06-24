@@ -1,6 +1,6 @@
 # Bookdoctor 
 
-## Adding tests with Jest and React-testing-library
+## Currently adding tests with Jest and React-testing-library
 
 Due to COVID and NHS found cut, our NHS has difficulties to cope with the current situation. There are too many patients and not enough staff to help them. Therefore I worked with other developers to create this online GP appointment booking system. 
 
