@@ -1,5 +1,7 @@
 # Bookdoctor 
 
+## Adding tests with Jest and React-testing-library
+
 Due to COVID and NHS found cut, our NHS has difficulties to cope with the current situation. There are too many patients and not enough staff to help them. Therefore I worked with other developers to create this online GP appointment booking system. 
 
 The normal way of booking your GP appointment is to call your GP surgery. But as there are many people dialling to request COVID information, I think we should leave the phone line to those who actually need to ask questions and move the booking system online.
