@@ -1,0 +1,342 @@
+@import '../css/reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500&display=swap');
+
+
+$nhs-color: #005EB8;
+$nhs-light-blue: #41B6E6;
+$nhs-aqua-green: #00A499;
+$nhs-dark-blue: #003087;
+$nhs-pink: #AE2573;
+$nhs-dark-pink: #7C2855;
+$nhs-purple: #330072;
+$nhs-pale-gray: #E8EDEE;
+$nhs-mid-gray: #768692;
+$nhs-dark-gray: #425563;
+$milk-white: #faf6ef;
+
+
+$large-screen: 700px;
+
+
+
+
+body {
+  color: $nhs-color;
+  font-family: 'Barlow', sans-serif;
+  position: relative;
+}
+
+h1 {
+  color: $nhs-color;
+}
+.button {
+  border: none;
+  outline: none;
+  background-color: $nhs-color;
+  color: #fff;
+  width: 380px;
+  margin: 20px auto 40px auto;
+  &:hover {
+    color: #fff;
+    background-color: $nhs-light-blue;
+    transition: .3s ease;
+  }
+}
+
+.formStyle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.links {
+  text-decoration: underline;
+  &:hover {
+    color: $nhs-light-blue;
+    transition: .3s ease;
+  }
+}
+
+.selectInput {
+  margin-top: 20px;
+}
+
+
+.MuiContainer-root {
+  padding-left: 64px;
+  padding-right: 24px;
+
+}
+
+.input .textarea {
+  &:focus {
+    border-color: $nhs-pink;
+  }
+}
+
+
+.navFlexBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.homeTitle {
+  color: black;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.homeContent {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.title {
+  color: $nhs-color;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.content {
+  font-size: 20px;
+  color: $nhs-dark-blue;
+}
+
+.navbar {
+  background-color: transparent;
+  background-image: none;
+  position: absolute;
+}
+
+.naV {
+  color: $nhs-color;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 10px;
+  padding: 3px 8px;
+  border: .5px solid;
+  border-radius: 50px;
+  transition: all .3s ease-in-out;
+  &:hover {
+    color: $nhs-light-blue;
+    border: .5px solid $nhs-color;
+    transform: scale(1.1);
+  }
+}
+
+
+.navbar-item {
+  &:hover{
+    color: $nhs-light-blue;
+  }
+}
+
+.tile-is-child-notification {
+  background-color: $nhs-light-blue;
+}
+
+
+.bookPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $milk-white;
+  background-image: url('https://66.media.tumblr.com/c15af69896662d398a955e53f807f060/tumblr_o9tylwXXiD1tf8vylo1_1280.png');
+  background-size: cover;
+}
+
+
+.formTitle {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 5px;
+  width: 300px;
+}
+
+.calendar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 430px;
+}
+
+.calendarTitle {
+  font-size: 18px;
+  color: $nhs-mid-gray;
+  text-align: center;
+  margin-bottom: 15px;
+  width: 500px;
+}
+
+.calendarBooking {
+  margin-top: 100px;
+}
+
+
+.dashboardTitle {
+  font-size: 24px;
+  color: $nhs-color;
+  margin-right: 10px;
+}
+
+.bookPageLogin {
+  font-size: 30px;
+  color: $nhs-dark-blue;
+  width: 80%;
+}
+
+.bookPageFlex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.background {
+  font-size: 100px;
+}
+
+.doctorInfo {
+  font-size: 20px;
+  color: $nhs-color;
+  margin-bottom: 10px;
+}
+
+
+.imageStyle {
+  width: 50%;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+
+.appointmentFlex {
+  display: flex;
+  align-items: center;
+}
+
+.dashboardFlexBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+  // margin-top: 30px;
+}
+
+.dashboardNav {
+  border: 1px solid $nhs-light-blue;
+  border-radius: 100%;
+  // background-color: transparent;
+  // background-image: none;
+  // position: absolute;
+  padding: 5px;
+  // margin: 20px 0 20px 50px;
+}
+
+.dashboardContent {
+  background-image: url('https://66.media.tumblr.com/e5e4a78035d2db4535b1bf18a7ba78f3/tumblr_nwfphgd4tI1tf8vylo1_1280.png');
+  background-position: center center;
+  background-size: cover;
+}
+
+#alert {
+  width: 50px;
+}
+
+
+@media (min-width: $large-screen) {
+
+  .navFlexBox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    // justify-content: center;
+    align-items: center;
+  }
+
+  .cardWrapper{
+    position: relative;
+    left: 80px;
+    z-index: 1;
+  }
+
+  .homeTitle {
+    color: black;
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+  .bookPage {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: $milk-white;
+    background-image: url('https://66.media.tumblr.com/c15af69896662d398a955e53f807f060/tumblr_o9tylwXXiD1tf8vylo1_1280.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .calendarBooking {
+    margin-top: 0;
+  }
+
+  .formTitle {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 5px;
+  }
+
+  .calendarTitle {
+    font-size: 18px;
+    color: $nhs-mid-gray;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .dashboardNav {
+    border: 1px solid $nhs-light-blue;
+    border-radius: 100%;
+    padding: 5px;
+    transition: all .3s ease-in-out;
+    &:hover {
+      color: $nhs-light-blue;
+      border: .5px solid $nhs-color;
+      transform: scale(1.3);
+    }
+  }
+
+  .sideTaggle {
+    display: none;
+  }
+
+  .dashboardFlexBox {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    margin-bottom: 40px;
+  }
+
+  .dashboardTitle {
+    font-size: 42px;
+    color: $nhs-light-blue;
+    margin-right: 20px;
+  }
+
+  .dashboardContent {
+    height: 100vh;
+    background-image: url('https://66.media.tumblr.com/e5e4a78035d2db4535b1bf18a7ba78f3/tumblr_nwfphgd4tI1tf8vylo1_1280.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: repeat;
+    overflow: hidden;
+  }
+
+  #alert {
+    width: 50px;
+  }
+}

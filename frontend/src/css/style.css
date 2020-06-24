@@ -1,0 +1,304 @@
+@import '../css/reset.css';
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500&display=swap");
+body {
+  color: #005EB8;
+  font-family: "Barlow", sans-serif;
+  position: relative;
+}
+
+h1 {
+  color: #005EB8;
+}
+
+.button {
+  border: none;
+  outline: none;
+  background-color: #005EB8;
+  color: #fff;
+  width: 380px;
+  margin: 20px auto 40px auto;
+}
+.button:hover {
+  color: #fff;
+  background-color: #41B6E6;
+  transition: 0.3s ease;
+}
+
+.formStyle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.links {
+  text-decoration: underline;
+}
+.links:hover {
+  color: #41B6E6;
+  transition: 0.3s ease;
+}
+
+.selectInput {
+  margin-top: 20px;
+}
+
+.MuiContainer-root {
+  padding-left: 64px;
+  padding-right: 24px;
+}
+
+.input .textarea:focus {
+  border-color: #AE2573;
+}
+
+.navFlexBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.homeTitle {
+  color: black;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.homeContent {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.title {
+  color: #005EB8;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.content {
+  font-size: 20px;
+  color: #003087;
+}
+
+.navbar {
+  background-color: transparent;
+  background-image: none;
+  position: absolute;
+}
+
+.naV {
+  color: #005EB8;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 10px;
+  padding: 3px 8px;
+  border: 0.5px solid;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+.naV:hover {
+  color: #41B6E6;
+  border: 0.5px solid #005EB8;
+  transform: scale(1.1);
+}
+
+.navbar-item:hover {
+  color: #41B6E6;
+}
+
+.tile-is-child-notification {
+  background-color: #41B6E6;
+}
+
+.bookPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #faf6ef;
+  background-image: url("https://66.media.tumblr.com/c15af69896662d398a955e53f807f060/tumblr_o9tylwXXiD1tf8vylo1_1280.png");
+  background-size: cover;
+}
+
+.formTitle {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 5px;
+  width: 300px;
+}
+
+.calendar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 430px;
+}
+
+.calendarTitle {
+  font-size: 18px;
+  color: #768692;
+  text-align: center;
+  margin-bottom: 15px;
+  width: 500px;
+}
+
+.calendarBooking {
+  margin-top: 100px;
+}
+
+.dashboardTitle {
+  font-size: 24px;
+  color: #005EB8;
+  margin-right: 10px;
+}
+
+.bookPageLogin {
+  font-size: 30px;
+  color: #003087;
+  width: 80%;
+}
+
+.bookPageFlex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.background {
+  font-size: 100px;
+}
+
+.doctorInfo {
+  font-size: 20px;
+  color: #005EB8;
+  margin-bottom: 10px;
+}
+
+.imageStyle {
+  width: 50%;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.appointmentFlex {
+  display: flex;
+  align-items: center;
+}
+
+.dashboardFlexBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.dashboardNav {
+  border: 1px solid #41B6E6;
+  border-radius: 100%;
+  padding: 5px;
+}
+
+.dashboardContent {
+  background-image: url("https://66.media.tumblr.com/e5e4a78035d2db4535b1bf18a7ba78f3/tumblr_nwfphgd4tI1tf8vylo1_1280.png");
+  background-position: center center;
+  background-size: cover;
+}
+
+#alert {
+  width: 50px;
+}
+
+@media (min-width: 700px) {
+  .navFlexBox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .cardWrapper {
+    position: relative;
+    left: 80px;
+    z-index: 1;
+  }
+
+  .homeTitle {
+    color: black;
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+  .bookPage {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #faf6ef;
+    background-image: url("https://66.media.tumblr.com/c15af69896662d398a955e53f807f060/tumblr_o9tylwXXiD1tf8vylo1_1280.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .calendarBooking {
+    margin-top: 0;
+  }
+
+  .formTitle {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 5px;
+  }
+
+  .calendarTitle {
+    font-size: 18px;
+    color: #768692;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .dashboardNav {
+    border: 1px solid #41B6E6;
+    border-radius: 100%;
+    padding: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  .dashboardNav:hover {
+    color: #41B6E6;
+    border: 0.5px solid #005EB8;
+    transform: scale(1.3);
+  }
+
+  .sideTaggle {
+    display: none;
+  }
+
+  .dashboardFlexBox {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    margin-bottom: 40px;
+  }
+
+  .dashboardTitle {
+    font-size: 42px;
+    color: #41B6E6;
+    margin-right: 20px;
+  }
+
+  .dashboardContent {
+    height: 100vh;
+    background-image: url("https://66.media.tumblr.com/e5e4a78035d2db4535b1bf18a7ba78f3/tumblr_nwfphgd4tI1tf8vylo1_1280.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: repeat;
+    overflow: hidden;
+  }
+
+  #alert {
+    width: 50px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
