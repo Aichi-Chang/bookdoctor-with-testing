@@ -113,6 +113,7 @@ export default function Register(props) {
           <h1 className='formTitle'>Sign Up</h1>
 
           <form className='formStyle' onSubmit={(e) => handleSubmit(e)}>
+            <label htmlFor='username'>User Name</label>
             <TextField
               onChange={(e) => handleChange(e)}
               variant="outlined"

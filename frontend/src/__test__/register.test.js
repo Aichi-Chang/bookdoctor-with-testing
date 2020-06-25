@@ -15,3 +15,10 @@ test('render the ui', () => {
   expect(signIn).toBeInTheDocument()
   // debug()
 })
+
+
+test('enter an invalid value for register form', () => {
+  const {getByLabelText} = render(<Register />, { wrapper: MemoryRouter })
+  const usernameField = getByLabelText(/user name/i)
+  console.log(usernameField.id)
+})
