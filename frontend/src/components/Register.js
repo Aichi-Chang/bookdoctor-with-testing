@@ -74,6 +74,7 @@ export default function Register(props) {
   })
 
 
+
   function handleChange(e) {
     e.persist()
     setRegisterInfo({ ...registerInfo, [e.target.name]: e.target.value })
@@ -98,7 +99,6 @@ export default function Register(props) {
 
 
 
-
   return (
     <Grid container component="main" className={classes.root}>
       <CssBaseline />
@@ -112,8 +112,8 @@ export default function Register(props) {
           
           <h1 className='formTitle'>Sign Up</h1>
 
-          <form className='formStyle' onSubmit={(e) => handleSubmit(e)}>
-            <label htmlFor='username'>User Name</label>
+          <form className='formStyle' onSubmit={(e) => handleSubmit(e)} name='register form'>
+            {/* <label htmlFor='username'>User Name</label> */}
             <TextField
               onChange={(e) => handleChange(e)}
               variant="outlined"
@@ -175,7 +175,7 @@ export default function Register(props) {
               onChange={(e) => handleChange(e)}
               variant="outlined"
               margin="normal"
-              required
+              // required
               fullWidth
               name="passwordConfirmation"
               label="Password Confirmation"
@@ -190,8 +190,8 @@ export default function Register(props) {
               }}
             />
             {errors.passwordConfirmation && <small style={{ color: 'red' }}>{errors.passwordConfirmation.message}</small>}
-            <button className='button' >
-              Sign In
+            <button className='button' name='submit'>
+              Sign Up
             </button>
 
           </form>
